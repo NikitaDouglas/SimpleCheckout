@@ -32,3 +32,9 @@ You will discuss your approach with a coach, describing your TDD process, and wi
 
 I'm going to begin this exercise with the assumption that I am the shopper in the user stories.
 I'm going to run feature tests on IRB and also create a couple of Domain Model Diagrams for my work.
+
+
+In my initial plan for this challenge I drew a sequence diagram with three classes:
+`Item`, `Checkout`, `Formatter`. Given the aim of this exercise is to break one class into two,
+I can see that I can initially format the price with a private method in `Checkout` and then delegate
+that to a new class `Formatter`.
