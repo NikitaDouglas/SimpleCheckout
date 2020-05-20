@@ -27,3 +27,8 @@ You'll be able to explain the approach you took to writing your code and justify
 You will have a well tested, working implementation of the system described above (empirical)
 
 You will discuss your approach with a coach, describing your TDD process, and will receive feedback (credible)
+
+## My Evidence
+
+I'm going to begin this exercise with the assumption that I am the shopper in the user stories.
+I'm going to run feature tests on IRB and also create a couple of Domain Model Diagrams for my work.
