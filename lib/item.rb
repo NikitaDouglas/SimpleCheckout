@@ -1,5 +1,6 @@
-class Item
+# frozen_string_literal: true
 
+class Item
   def initialize(name, price)
     @name = name
     @price = price

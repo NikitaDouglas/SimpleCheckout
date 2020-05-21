@@ -1,6 +1,7 @@
-class Checkout
+# frozen_string_literal: true
 
-attr_reader :total
+class Checkout
+  attr_reader :total
 
   def initialize
     @total = 0
