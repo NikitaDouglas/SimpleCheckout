@@ -10,4 +10,7 @@ attr_reader :total
     @total += item.check_price
   end
 
+  def see_total
+    @total
+  end
 end
