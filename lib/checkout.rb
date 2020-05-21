@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 class Checkout
   attr_reader :total
 
@@ -9,9 +7,16 @@ class Checkout
 
   def scan(item)
     @total += item.check_price
+    "Item scanned"
   end
 
   def see_total
-    @total
+    format_total
+  end
+
+  private
+
+  def format_total
+     "£%.2f" % @total
   end
 end
