@@ -1,4 +1,4 @@
-# frozen_string_literal: true
+require_relative './checkout'
 
 class Item
   def initialize(name, price)
@@ -11,6 +11,6 @@ class Item
   end
 
   def buy_item(checkout)
-    checkout.scan_item(self)
+    checkout.scan(self)
   end
 end
