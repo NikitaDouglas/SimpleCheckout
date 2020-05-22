@@ -1,7 +1,7 @@
 require 'checkout'
 
 describe Checkout do
-  let(:formatter_double) { double(:formatter, format_total: "£9.00") }
+  let(:formatter_double) { double(:formatter, format: "£9.00") }
   let(:item_double) { double(:item) }
   let(:checkout) { Checkout.new(formatter_double) }
 
@@ -22,7 +22,7 @@ describe Checkout do
     #       .to change{ checkout.see_total }.by("£%.2f" % price)
     #   end
     # end
-    
+
     it 'allows the shopper to see the price formatted as £XX.XX' do
       [0.4, 5.6, 3.0].each do |price|
         allow(item_double).to receive(:check_price) { price }

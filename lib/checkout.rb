@@ -14,7 +14,7 @@ class Checkout
   end
 
   def see_total
-    @formatter.format_total(@total)
+    @formatter.format(@total)
   end
 
   # def format_total
