@@ -4,7 +4,7 @@ The Simple Checkout script allows you to create items, check their price, buy th
 and ultimately receive a total for your shopping formatted as £xx.xx.
 
 I wrote this script in response to the user stories listed [here](https://diode.makersacademy.com/students/samjones1001/projects/317).
-This project was created whilst I was at Makers Academy(April to July 2020). I decided to this project
+This project was created whilst I was at Makers Academy(April to July 2020). I decided to do this project
 in order to build three of the skills I was working towards during Week 2 of the course: extracting a class, mocking, and dependency injection.
 You can find out more information about my goals and how I achieved them in my [Portfolio](https://github.com/NikitaDouglas/MyPortfolio/blob/master/Week2.md).
 
@@ -20,7 +20,7 @@ The tests were written with RSpec - run `rspec` when you're in the SimpleCheckou
 
 ## How I Built Simple Checkout
 
-I'm began this project with the assumption that I was the shopper in the [user stories](https://diode.makersacademy.com/students/samjones1001/projects/317).
+I began this project with the assumption that I was the shopper in the [user stories](https://diode.makersacademy.com/students/samjones1001/projects/317).
 I decided that the Simple Checkout would be tested and run in `irb`.
 
 I then proceeded to create a sequence diagram to plan my approach.
@@ -33,7 +33,7 @@ Thus, when it came to creating a `Formatter class`, I was able to practice the O
 whilst maintaining test coverage.
 
 
-In order to progress through the user stories, I looked at each one in turn
+To progress through the user stories, I looked at each one in turn
 and ran a feature test for it, before moving to write a unit test in RSpec. I was strict in my
 approach to TDD, committing my cod after each passed test and then doing any necessary refactoring before committing again.
 
