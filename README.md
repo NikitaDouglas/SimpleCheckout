@@ -25,7 +25,7 @@ I decided that the Simple Checkout would be tested and run in `irb`.
 
 I then proceeded to create a sequence diagram to plan my approach.
 
-![image of Simple Checkout sequence diagram](https://drive.google.com/open?id=1wRk0mtJ57mIab7mp-efRtZagZrqhZ96L)
+![image of Simple Checkout sequence diagram](https://github.com/NikitaDouglas/SimpleCheckout/blob/master/Simple%20Checkout%20Sequence%20Diagram.png)
 
 As you can see, from the outset I planned to use a `Formatter class` to format the total price, but
 I initially had a private `format_total` method in the `Checkout` class (here is the [relevant commit](https://github.com/NikitaDouglas/SimpleCheckout/commit/e2c993179c897049beeea97ebe2723a16b977c68)).
