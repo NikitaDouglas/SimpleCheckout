@@ -1,8 +1,11 @@
+require_relative './formatter'
+
 class Checkout
   attr_reader :total
 
-  def initialize
+  def initialize(formatter = Formatter.new)
     @total = 0
+    @formatter = formatter
   end
 
   def scan(item)
@@ -11,12 +14,10 @@ class Checkout
   end
 
   def see_total
-    format_total
+    @formatter.format_total(@total)
   end
 
-  private
-
-  def format_total
-     "£%.2f" % @total
-  end
+  # def format_total
+  #    "£%.2f" % @total
+  # end
 end
