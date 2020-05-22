@@ -1,40 +1,41 @@
-# Action Plan
-Write the code for a supermarket checkout that can calculate the price of a number of items. Each item should be priced individually, and the checkout should be able to scan them in any order.
+# Simple Checkout
 
-## User Stories
+The Simple Checkout script allows you to create items, check their price, buy them at the checkout,
+and ultimately receive a total for your shopping formatted as £xx.xx.
 
-As a shopper
-So I know how much an item costs
-I would like to be able to see its price
+I wrote this script in response to the user stories listed [here](https://diode.makersacademy.com/students/samjones1001/projects/317).
+This project was created whilst I was at Makers Academy(April to July 2020). I decided to this project
+in order to build three of the skills I was working towards during Week 2 of the course: extracting a class, mocking, and dependency injection.
+You can find out more information about my goals and how I achieved them in my [Portfolio](https://github.com/NikitaDouglas/MyPortfolio/blob/master/Week2.md).
 
-As a shopper
-So that I can buy an item
-I would like to be able to scan items at the checkout
+## How To Use Simple Checkout
 
-As a shopper
-So that I know how much to pay
-I would like to be able to see a total for all scanned items
+You can run this script in a REPL such as `irb` by loading the `item.rb` file.
 
-As a shopper
-So that I know how much to pay
-I would like to see all prices correctly formatted (£xx.xx)
+You can clone this script using the green **Clone or Download** button above. On cloning,
+you will need to install bundler (take a look [here](https://bundler.io/) if you don't know how to do that)
+and then run `bundle install` to install the dependencies.
 
-You main focus here should be to follow a rigorous TDD process: RED, GREEN, REFACTOR!
+The tests were written with RSpec - run `rspec` when you're in the SimpleCheckout root directory to run the tests.
 
-## Evidence Plan
-You'll be able to explain the approach you took to writing your code and justify some of the decisions you made (emotional)
+## How I Built Simple Checkout
 
-You will have a well tested, working implementation of the system described above (empirical)
+I'm began this project with the assumption that I was the shopper in the [user stories](https://diode.makersacademy.com/students/samjones1001/projects/317).
+I decided that the Simple Checkout would be tested and run in `irb`.
 
-You will discuss your approach with a coach, describing your TDD process, and will receive feedback (credible)
+I then proceeded to create a sequence diagram to plan my approach.
 
-## My Evidence
+![image of Simple Checkout sequence diagram](https://drive.google.com/open?id=1wRk0mtJ57mIab7mp-efRtZagZrqhZ96L)
 
-I'm going to begin this exercise with the assumption that I am the shopper in the user stories.
-I'm going to run feature tests on IRB and also create a couple of Domain Model Diagrams for my work.
+As you can see, from the outset I planned to use a `Formatter class` to format the total price, but
+I initially had a private `format_total` method in the `Checkout` class (here is the [relevant commit](https://github.com/NikitaDouglas/SimpleCheckout/commit/e2c993179c897049beeea97ebe2723a16b977c68)).
+Thus, when it came to creating a `Formatter class`, I was able to practice the OOP principles of delegating, extracting, and dependency injection
+whilst maintaining test coverage.
 
 
-In my initial plan for this challenge I drew a sequence diagram with three classes:
-`Item`, `Checkout`, `Formatter`. Given the aim of this exercise is to break one class into two,
-I can see that I can initially format the price with a private method in `Checkout` and then delegate
-that to a new class `Formatter`.
+In order to progress through the user stories, I looked at each one in turn
+and ran a feature test for it, before moving to write a unit test in RSpec. I was strict in my
+approach to TDD, committing my cod after each passed test and then doing any necessary refactoring before committing again.
+
+I got the opportunity to test my doubling and stubbing abilities whilst writing my tests;
+initially testing without either, before refactoring my code to use them.   
