@@ -10,7 +10,11 @@ You can find out more information about my goals and how I achieved them in my [
 
 ## How To Use Simple Checkout
 
-You can run this script in a REPL such as `irb` by loading the `item.rb` file.
+You can run this script in a REPL such as `irb` by loading the `item.rb` file as follows:
+
+```
+irb -r ./lib/item.rb
+```
 
 You can clone this script using the green **Clone or Download** button above. On cloning,
 you will need to install bundler (take a look [here](https://bundler.io/) if you don't know how to do that)
